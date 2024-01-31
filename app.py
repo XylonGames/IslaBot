@@ -226,7 +226,7 @@ def getDescriptionString(dict):
         descr = descr + '**' + info['Name'].replace('\n', '') + '** ' + info['Description'] + '\n'
 
     return descr
-
+   
 #get specific display for the stats
 def getStatDescriptionString(dict):
     return '**Class**: ' + dict['Class'] + '\n**Attributes**: ' + ("".join(dict['Attributes'])) + '\n**Job**: ' + dict['Job'] + '\n**Influence**: ' + dict['Influence'] + '\n**HP**: ' + dict['HP'] + '\n**SP**: ' + dict['SP'] + '\n**P.Atk**: ' + dict['P.Atk'] + '\n**P.Def**: ' + dict['P.Def'] + '\n**E.Atk**: ' + dict['E.Atk'] + '\n**E.Def**: ' + dict['E.Def'] + '\n**Crit**: ' + dict['Crit'] + '\n**Spd**: ' + dict['Spd']                
@@ -246,6 +246,10 @@ def getDescription(dict, display):
         return getStatDescriptionString(dict)
     elif display == 'Full':
         return getFullDescriptionString(dict)
+    elif display == 'Art':
+        return ''
+    elif display == 'Story':
+        return dict[display]
     else:
         return getDescriptionString(dict[display])
         
@@ -330,6 +334,9 @@ async def processUnitSearch(interaction, type, input, display, sort):
                            
             #set image of the embed
             embed.set_thumbnail(url=dict['Image'])
+            
+            if display == 'Art':
+                embed.set_image(url=dict['Art'])
 
             #send the embed
             await sendReplyEmbed(interaction, embed)
