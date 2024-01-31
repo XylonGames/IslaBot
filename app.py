@@ -623,8 +623,30 @@ async def self(interaction: discord.interactions.Interaction, attributes: str, s
         
         #get all matching units
         for unit in unitlist:
-            if search in unit['Attributes']:
+            found = False
+            if search in unit['Attributes'] and found == False:
                 newunitlist.append(unit)
+                found = True
+            else:
+                for skill in unit['Battle Skills']:
+                    if search in unit['Battle Skills'][skill]['Image'] and found == False:
+                        newunitlist.append(unit)
+                        found = True
+                
+                for skill in unit['Passive Skills']:
+                    if search in unit['Passive Skills'][skill]['Image'] and found == False:
+                        newunitlist.append(unit)
+                        found = True        
+                
+                for skill in unit['Ultimate Technique']:
+                    if search in unit['Ultimate Technique'][skill]['Image'] and found == False:
+                        newunitlist.append(unit)
+                        found = True
+                        
+                for skill in unit['Awakening IV Accessory']:
+                    if search in unit['Awakening IV Accessory'][skill]['Image'] and found == False:
+                        newunitlist.append(unit)
+                        found = True
             
         #store them in a new list, which is getting used for the second or third etc attributes, so we can keep working with units that matched the previous attribute    
         unitlist = newunitlist
