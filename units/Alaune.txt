@@ -1,0 +1,57 @@
+{
+    "Name": "Alaune",
+    "Image": "",
+    "Class": "",
+    "Attributes": [
+    ],
+    "Job": "",
+    "HP": "",
+    "SP": "",
+    "P.Atk": "",
+    "P.Def": "",
+    "E.Atk": "",
+    "E.Def": "",
+    "Crit": "",
+    "Spd": "",
+    "Passive Skills": {
+        "Skill": {
+            "Name": "Skill",
+            "Image": [
+                ""
+            ],
+            "Description": "",
+            "Type": []
+        }
+    },
+    "Battle Skills": {
+        "Skill": {
+            "Name": "Skill",
+            "Image": [
+                ""
+            ],
+            "",
+            "Type": []
+        }
+    },
+    "Ultimate Technique": {
+        "Skill": {
+            "Name": "Skill",
+            "Image": [
+                ""
+            ],
+            "Description": "",
+            "Type": []
+        }
+    },
+    "Awakening IV Accessory": {
+        "Accessory": {
+            "Name": "Accessory",
+            "Image": [],
+            "Description": "",
+            "Type": []
+        }
+    },
+    "Influence": "",
+    "Art": "",
+    "Story": ""
+}
