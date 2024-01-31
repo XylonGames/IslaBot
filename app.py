@@ -105,6 +105,7 @@ DebuffList = Literal[
     'E.Def Down',
     'P.Atk Down',
     'E.Atk Down',
+    'Spd Down',
     #Magic
     'Fire Res Down',
     'Ice Res Down',
@@ -127,8 +128,7 @@ DebuffList = Literal[
     'Bleed',
     'Combustion',
     'Blindness' ,
-    'Taunt',
-    'Intimidate'
+    'Taunt'
 ]
                
 #list of discord emoji's, so we can easily convert search values into emoji's
