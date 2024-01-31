@@ -91,7 +91,7 @@ BuffList = Literal[
     'Crit Up',
     'Speed Up',
     'Damage Up',
-    'Weapon Damage Up',
+    'Attribute Damage Up',
     'Crit Damage Up',
     #Effects
     'Remove Ailments',
