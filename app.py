@@ -331,12 +331,12 @@ async def processUnitSearch(interaction, type, input, display, sort):
                 description = descrstring,
                 title = dict['Name']
             )
-                           
-            #set image of the embed
-            embed.set_thumbnail(url=dict['Image'])
             
+            #set image of the embed
             if display == 'Art':
                 embed.set_image(url=dict['Art'])
+            else:              
+                embed.set_thumbnail(url=dict['Image'])
 
             #send the embed
             await sendReplyEmbed(interaction, embed)
@@ -393,8 +393,13 @@ async def processUnitSearch(interaction, type, input, display, sort):
                         description = descrstring,
                         title = dict['Name']
                     )
-                    
-                    embed.set_thumbnail(url=dict['Image'])
+                      
+                    #set image of the embed
+                    if display == 'Art':
+                        embed.set_image(url=dict['Art'])
+                    else:              
+                        embed.set_thumbnail(url=dict['Image'])
+                
                     await sendReplyEmbed(interaction, embed)
                     f.close() 
                 
@@ -439,7 +444,12 @@ async def processUnitSearch(interaction, type, input, display, sort):
                 )
 
                 #send a message for each unit
-                embed.set_thumbnail(url=match['Image'])
+                #set image of the embed
+                if display == 'Art':
+                    embed.set_image(url=dict['Art'])
+                else:              
+                    embed.set_thumbnail(url=dict['Image'])
+                
                 await sendReplyEmbed(interaction, embed)
 
                 f.close() 
