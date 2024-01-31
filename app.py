@@ -473,6 +473,7 @@ def searchUnitSkills(unittype, searchtype, search):
                 if added == False:
                     if search in unitdata['Battle Skills'][skillitem]['Type']:
                         units.append(unitdata)
+                        added = True
                         continue
                 else:
                     continue
@@ -482,6 +483,7 @@ def searchUnitSkills(unittype, searchtype, search):
                 if added == False:
                     if search in unitdata['Passive Skills'][skillitem]['Type']:
                         units.append(unitdata)
+                        added = True
                         continue
                 else:
                     continue
@@ -490,6 +492,7 @@ def searchUnitSkills(unittype, searchtype, search):
                 if added == False:
                     if search in unitdata['Ultimate Technique'][skillitem]['Type']:
                         units.append(unitdata)
+                        added = True
                         continue
                 else:
                     continue
@@ -499,6 +502,7 @@ def searchUnitSkills(unittype, searchtype, search):
                 if added == False:
                     if search in unitdata['Awakening IV Accessory'][skillitem]['Type']:
                         units.append(unitdata)
+                        added = True
                         continue
                 else:
                     continue
