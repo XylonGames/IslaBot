@@ -40,7 +40,10 @@ AttributeList = Literal[
         'Ice',
         'Lightning/Thunder',
         'Light',
-        'Dark'
+        'Dark',
+        'Heal',
+        'Buff',
+        'Debuff'
     ]
 
 DisplayList = Literal[
@@ -69,7 +72,6 @@ BuffList = Literal[
     'HP Regen',
     'Revive',
     'SP Heal',
-    'SP Regen',
     'HP Up',
     "BP Restore",
     #Special
@@ -145,7 +147,10 @@ EmojiList = {
     'Lightning' : '<:Lightning_Thunder:1197108596786348093>',
     'Thunder' : '<:Lightning_Thunder:1197108596786348093>',
     'Light': '<:Light:1197108591962882168>',
-    'Dark': '<:Dark:1197108677069504602>'
+    'Dark': '<:Dark:1197108677069504602>',
+    'Heal': '<:Heal:1198387991186514032>',
+    'Buff': '<:Buff:1198387985880727552>',
+    'Debuff': '<:Debuff:1198387982651109517>'
 }
 #create directories if it doesn't exist
 isExist = os.path.exists('units')
