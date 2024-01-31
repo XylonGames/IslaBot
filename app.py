@@ -87,6 +87,7 @@ BuffList = Literal[
     'E.Atk Up',
     'P.Def Up',
     'E.Def Up',
+    'Res Up',
     'Crit Up',
     'Speed Up',
     'Damage Up',
