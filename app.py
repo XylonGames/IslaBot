@@ -11,7 +11,7 @@ from typing import Literal
 #load environment variables from .env file in same directory, fetch variables using os.get_env('variable')
 load_dotenv()
 
-MIN_RATIO = 85
+MIN_RATIO = 82
 
 #Literal arrays to use as dropdown options
 SortList = Literal[
@@ -72,7 +72,6 @@ BuffList = Literal[
     'HP Regen',
     'Revive',
     'SP Heal',
-    'HP Up',
     "BP Restore",
     #Special
     'Cover',
@@ -94,6 +93,7 @@ BuffList = Literal[
     'Attribute Damage Up',
     'Crit Damage Up',
     #Effects
+    'Extend',
     'Remove Ailments',
     'Immunity'
 ]
