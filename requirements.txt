@@ -1,0 +1,5 @@
+discord
+fuzzywuzzy
+python-Levenshtein
+discord-py-interactions
+python-dotenv
